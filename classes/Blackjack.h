@@ -1,11 +1,16 @@
-#ifndef CardGame_Player_h
-    #define CardGame_Player_h
+#ifndef CardGame_Blackjack_h
+    #define CardGame_Blackjack_h
+
+    #include <vector>
+    #include "Dealer.h"
+    #include "Player.h"
 
     class Blackjack
     {
         private:
             bool _exit;
-            int _players;
+            Dealer _dealer;
+            std::vector<Player*> _players;
         public:
             Blackjack();
             void initialise();
